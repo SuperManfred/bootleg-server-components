@@ -14,14 +14,14 @@ export default function Layout({
         display: "flex",
         justifyContent: "center",
         minHeight: fullscreen ? "100vh" : "auto",
-        // backgroundColor: 'yellow',
+        backgroundColor: "yellow",
       }}
     >
       <div
         style={{
           maxWidth: 400,
           width: 400,
-          // backgroundColor: 'springgreen',
+          backgroundColor: "springgreen",
           // comment here for later use
         }}
       >

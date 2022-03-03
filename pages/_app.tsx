@@ -25,8 +25,8 @@ const App = ({ Component, pageProps }) => {
               />
             </Head>
             <CssBaseline />
-            {/* <Layout fullscreen> */}
-            {/* <div
+            {/* <Layout fullscreen>
+              <div
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -42,8 +42,8 @@ const App = ({ Component, pageProps }) => {
                     // comment here for later use
                   }}
                 ></div>
-              </div> */}
-            {/* <Component {...pageProps} />
+              </div>
+              <Component {...pageProps} />
             </Layout> */}
             <Component {...pageProps} />
           </GeistProvider>
