@@ -12,44 +12,48 @@ const App = ({ Component, pageProps }) => {
   //   setThemeType((last) => (last === "dark" ? "light" : "dark"));
   // };
   return (
-    <ThemeContextProvider>
-      <GlobalContextProvider>
-        <MobileProvider>
-          <GeistProvider>
-            <Head>
-              <title>Verify and Authenticate</title>
-              <link rel="icon" href="/favicon.ico" />
-              <meta
-                name="viewport"
-                content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"
-              />
-            </Head>
-            <CssBaseline />
-            {/* <Layout fullscreen>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  minHeight: "100vh",
-                  backgroundColor: "yellow",
-                }}
-              >
-                <div
-                  style={{
-                    maxWidth: 400,
-                    width: 400,
-                    backgroundColor: "springgreen",
-                    // comment here for later use
-                  }}
-                ></div>
-              </div>
-              <Component {...pageProps} />
-            </Layout> */}
-            <Component {...pageProps} />
-          </GeistProvider>
-        </MobileProvider>
-      </GlobalContextProvider>
-    </ThemeContextProvider>
+    <GeistProvider>
+      <CssBaseline />
+      <Component {...pageProps} />
+    </GeistProvider>
+    // <ThemeContextProvider>
+    //   <GlobalContextProvider>
+    //     <MobileProvider>
+    //       <GeistProvider>
+    //         <Head>
+    //           <title>Verify and Authenticate</title>
+    //           <link rel="icon" href="/favicon.ico" />
+    //           <meta
+    //             name="viewport"
+    //             content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"
+    //           />
+    //         </Head>
+    //         <CssBaseline />
+    //         <Layout fullscreen>
+    //           <div
+    //             style={{
+    //               display: "flex",
+    //               justifyContent: "center",
+    //               minHeight: "100vh",
+    //               backgroundColor: "yellow",
+    //             }}
+    //           >
+    //             <div
+    //               style={{
+    //                 maxWidth: 400,
+    //                 width: 400,
+    //                 backgroundColor: "springgreen",
+    //               }}
+    //             >
+    //               <Component {...pageProps} />
+    //             </div>
+    //           </div>
+    //         </Layout>
+    //         <Component {...pageProps} />
+    //       </GeistProvider>
+    //     </MobileProvider>
+    //   </GlobalContextProvider>
+    // </ThemeContextProvider>
   );
 };
 

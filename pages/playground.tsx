@@ -12,7 +12,7 @@ export default function Playground() {
         alignItems="center"
         alignContent="center"
       >
-        <Input placeholder="into the wild" className="wildthing" />
+        <Input autoFocus placeholder="into the wild" className="wildthing" />
         {/* a place to render something else */}
       </Grid.Container>
     </>
